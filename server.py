@@ -28,7 +28,7 @@ def submit():
 
 @app.route("/result/too-low")
 def too_low():
-    return "<h1>Too low. Try again!</h1>\
+    return "<h1 style=color:red>Too low. Try again!</h1>\
         <img src=/static/its-too-low-egoraptor.gif>\
         <br>\
         <br>\
@@ -36,7 +36,7 @@ def too_low():
 
 @app.route("/result/too-high")
 def too_high():
-    return "<h1>Too high. Try again!</h1>\
+    return "<h1 style=color:purple>Too high. Try again!</h1>\
         <img src=/static/too-much.gif>\
         <br>\
         <br>\
@@ -44,7 +44,7 @@ def too_high():
 
 @app.route("/result/correct")
 def correct():
-    return "<h1>Correct!</h1>\
+    return "<h1 style=color:green>Correct!</h1>\
         <img src=/static/correct.gif>\
         <br>\
         <br>\
